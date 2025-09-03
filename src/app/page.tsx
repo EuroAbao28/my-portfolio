@@ -99,12 +99,17 @@ export default function Home() {
                 Full-Stack Dev 🚀
               </p>
 
-              <p className="mt-6 border-t border-gray-300 text-sm md:text-base text-gray-700">
+              <div className="mt-6 border-t border-gray-300 text-sm md:text-base text-gray-700 relative">
+                <img
+                  src="/cat.gif"
+                  alt="Funny GIF"
+                  className="w-14 absolute right-6 -top-10"
+                />
                 I mix caffeine with creativity. Whether it’s fine-tuning pixels
                 on the frontend or wiring up logic on the backend, I enjoy
                 building things that are fun, functional, and a little magical.
                 ✨
-              </p>
+              </div>
 
               <div className="mt-6 border-t min-[1003px]:border-b border-gray-300 flex gap-4">
                 <Link
@@ -480,6 +485,12 @@ export default function Home() {
           <video autoPlay loop muted playsInline className="w-16">
             <source src="/stickmandancing.mp4" type="video/mp4" />
           </video>
+
+          <img
+            src="/cat.gif"
+            alt="Funny GIF"
+            className="w-64 h-64 rounded-lg"
+          />
 
           <p className="text-center text-xs sm:text-base">
             © {new Date().getFullYear()} Euro Abao. All rights reserved.
