@@ -59,7 +59,7 @@ function SideNavMenu({ navItems, isOpen, onClose }: SideNavMenuProps) {
                     className="bg-white first:border-b last:border-t border-gray-300 not-first:not-last:border-y hover:bg-gray-50">
                     <a
                       href={`#${item}`}
-                      className="flex py-2 justify-center items-center capitalize font-medium">
+                      className="flex py-2 justify-center items-center capitalize text-sm">
                       {item}
                     </a>
                   </li>
