@@ -1,5 +1,6 @@
 "use client";
 
+import SideNavMenu from "@/components/SideNavMenu";
 import { images, TECH_STACK } from "@/constants/images";
 import { PROJECTS } from "@/constants/projects";
 import classNames from "classnames";
@@ -8,19 +9,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { FaFacebook, FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
-import {
-  LuBookOpen,
-  LuCalendarDays,
-  LuLink,
-  LuMail,
-  LuMenu,
-  LuPhone,
-  LuPickaxe,
-} from "react-icons/lu";
+import { LuMail, LuMenu, LuPhone } from "react-icons/lu";
 
 const LINKS = ["home", "projects", "contact"];
 
 export default function Home() {
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
   return (
     <div
       style={{
@@ -38,6 +33,7 @@ export default function Home() {
           <div className="flex justify-between items-center min-[600px]:mt-10 min-[600px]:border-t border-gray-300">
             <h1 className="text-2xl font-bold ml-2">EA</h1>
 
+            {/* large view */}
             <ul className="max-[600px]:hidden flex">
               {LINKS.map((item, index) => (
                 <li
@@ -50,9 +46,18 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="hidden max-[600px]:block p-4 text-xl hover:bg-gray-50">
+            {/* burger menu */}
+            <div
+              onClick={() => setIsSideMenuOpen(true)}
+              className="hidden max-[600px]:block p-4 text-xl hover:bg-gray-50">
               <LuMenu />
             </div>
+
+            <SideNavMenu
+              navItems={LINKS}
+              isOpen={isSideMenuOpen}
+              onClose={() => setIsSideMenuOpen(false)}
+            />
           </div>
         </div>
 
@@ -80,8 +85,8 @@ export default function Home() {
         <div className="bg-white"></div>
         <div className="border-x border-gray-300"></div>
 
-        <div className="bg-white py-16 ">
-          <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-12 border-y border-gray-300">
+        <div className="bg-white sm:py-16 ">
+          <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-12 sm:border-y border-gray-300">
             <div className="flex-1 md:border-r border-gray-300 flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl font-bold border-b lg:border-t border-gray-300">
                 Euro Abao
@@ -94,7 +99,7 @@ export default function Home() {
                 Full-Stack Dev 🚀
               </p>
 
-              <p className="mt-6 border-t border-gray-300 text-sm md:text-base">
+              <p className="mt-6 border-t border-gray-300 text-sm md:text-base text-gray-700">
                 I mix caffeine with creativity. Whether it’s fine-tuning pixels
                 on the frontend or wiring up logic on the backend, I enjoy
                 building things that are fun, functional, and a little magical.
@@ -217,7 +222,9 @@ export default function Home() {
                     <div></div>
                   </div>
 
-                  <p className="text-center">{item.label}</p>
+                  <p className="text-center text-gray-700 text-xs sm:text-base">
+                    {item.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -352,8 +359,8 @@ export default function Home() {
             </h3>
 
             <div className="mt-6 flex max-[940px]:flex-col gap-6 min-[940px]:gap-12 border-y border-gray-300">
-              <div className="border-r border-gray-300">
-                <h1 className="font-bold text-6xl border-b border-gray-300">
+              <div className="min-[940px]:border-r border-gray-300">
+                <h1 className="font-bold text-5xl md:text-6xl border-b border-gray-300">
                   Get in touch
                 </h1>
 
@@ -470,7 +477,9 @@ export default function Home() {
         <div className="border-x border-gray-300"></div>
 
         <div className="bg-white py-16">
-          <p className="text-center">Footer</p>
+          <p className="text-center text-xs sm:text-base">
+            © {new Date().getFullYear()} Euro Abao. All rights reserved.
+          </p>
         </div>
 
         <div className="border-x border-gray-300"></div>
