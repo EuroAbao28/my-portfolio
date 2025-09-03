@@ -355,7 +355,7 @@ export default function Home() {
 
           <div className="py-16 col-start-1 row-start-1">
             <h3 className="font-bold text-2xl border-y border-r-gray-300 bg-white">
-              Contact
+              Contact:
             </h3>
 
             <div className="mt-6 flex max-[940px]:flex-col gap-6 min-[940px]:gap-12 border-y border-gray-300">
@@ -442,13 +442,13 @@ export default function Home() {
                 <div className="border-y border-gray-300"></div>
 
                 {/* 3rd row */}
-                <div className="max-sm:border-b border-gray-300"></div>
+                <div></div>
                 <div className="col-span-3 border-x border-gray-300 grid grid-cols-[1fr_24px_1fr]">
                   <div></div>
                   <div></div>
                   <div className="sm:border-l border-gray-300 "></div>
                 </div>
-                <div className="max-sm:border-b border-gray-300"></div>
+                <div></div>
               </form>
             </div>
           </div>
@@ -476,7 +476,11 @@ export default function Home() {
         <div className="bg-white"></div>
         <div className="border-x border-gray-300"></div>
 
-        <div className="bg-white py-6">
+        <div className="bg-white py-6 flex flex-col justify-center items-center">
+          <video autoPlay loop muted playsInline className="w-16">
+            <source src="/stickmandancing.mp4" type="video/mp4" />
+          </video>
+
           <p className="text-center text-xs sm:text-base">
             © {new Date().getFullYear()} Euro Abao. All rights reserved.
           </p>
