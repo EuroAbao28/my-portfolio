@@ -443,7 +443,7 @@ export default function Home() {
 
                 {/* 3rd row */}
                 <div className="max-sm:border-b border-gray-300"></div>
-                <div className="col-span-3 border-x border-gray-300 grid grid-cols-[1fr_24px_1fr] max-sm:border-b">
+                <div className="col-span-3 border-x border-gray-300 grid grid-cols-[1fr_24px_1fr]">
                   <div></div>
                   <div></div>
                   <div className="sm:border-l border-gray-300 "></div>
@@ -476,7 +476,7 @@ export default function Home() {
         <div className="bg-white"></div>
         <div className="border-x border-gray-300"></div>
 
-        <div className="bg-white py-16">
+        <div className="bg-white py-6">
           <p className="text-center text-xs sm:text-base">
             © {new Date().getFullYear()} Euro Abao. All rights reserved.
           </p>
