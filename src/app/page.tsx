@@ -482,14 +482,10 @@ export default function Home() {
         <div className="border-x border-gray-300"></div>
 
         <div className="bg-white py-6 flex flex-col justify-center items-center">
-          <video autoPlay loop muted playsInline className="w-16">
-            <source src="/stickmandancing.mp4" type="video/mp4" />
-          </video>
-
           <img
-            src="/cat.gif"
+            src="/catjumping.gif"
             alt="Funny GIF"
-            className="w-64 h-64 rounded-lg"
+            className="w-16 rounded-lg"
           />
 
           <p className="text-center text-xs sm:text-base">
