@@ -481,7 +481,7 @@ export default function Home() {
         <div className="bg-white"></div>
         <div className="border-x border-gray-300"></div>
 
-        <div className="bg-white py-6 flex flex-col justify-center items-center">
+        <div className="bg-white pb-6 flex flex-col justify-center items-center">
           <img
             src="/catjumping.gif"
             alt="Funny GIF"
