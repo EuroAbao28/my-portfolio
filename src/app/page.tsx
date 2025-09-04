@@ -103,7 +103,7 @@ export default function Home() {
                 <img
                   src="/cat.gif"
                   alt="Funny GIF"
-                  className="w-14 absolute right-6 -top-10"
+                  className="w-14 absolute right-6 -top-[39px]"
                 />
                 I mix caffeine with creativity. Whether it’s fine-tuning pixels
                 on the frontend or wiring up logic on the backend, I enjoy
