@@ -28,7 +28,7 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
 
       {/* Modal container */}
       <div className="fixed inset-0  w-screen overflow-y-auto">
-        <div className="flex min-h-full items-center justify-center p-6">
+        <div className="flex min-h-full items-center justify-center p-2">
           <TransitionChild
             enter="ease-out duration-300"
             enterFrom="opacity-0 -translate-y-8"
@@ -38,7 +38,7 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
             leaveTo="opacity-0 -translate-y-8">
             <DialogPanel className="max-w-4xl w-full">
               <div
-                className="bg-white grid grid-cols-[24px_1fr_24px] grid-rows-[24px_1fr_24px_auto_24px]"
+                className="bg-white grid grid-cols-[16px_1fr_16px] grid-rows-[16px_1fr_16px_auto_16px] sm:grid-cols-[24px_1fr_24px] sm:grid-rows-[24px_1fr_24px_auto_24px]"
                 style={{
                   backgroundImage:
                     "repeating-linear-gradient(45deg, transparent, transparent 9px, rgba(83, 83, 83, 0.2) 9px, rgba(83, 83, 83, 0.2) 10px)",
@@ -68,9 +68,11 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                 <div className="border border-gray-300 bg-white">
                   <div className="flex justify-between items-center p-2 border-b border-gray-300">
                     <div>
-                      <h1 className="text-2xl font-medium">{project?.title}</h1>
+                      <h1 className="text-lg sm:text-2xl font-medium">
+                        {project?.title}
+                      </h1>
 
-                      <p className="text-sm text-gray-500">
+                      <p className="text-xs sm:text-sm text-gray-500">
                         {project?.date_published}
                       </p>
                     </div>
@@ -85,7 +87,7 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                     )}
                   </div>
 
-                  <p className="mt-6 border-y border-gray-300">
+                  <p className="mt-6 border-y border-gray-300 text-sm sm:text-base">
                     {project?.desc}
                   </p>
 
@@ -98,11 +100,11 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                           <Image
                             src={item.image}
                             alt={item.name}
-                            className="w-6"
+                            className="w-5"
                           />
                         )}
 
-                        <p className="text-sm">{item.name}</p>
+                        <p className="text-xs sm:text-sm">{item.name}</p>
                       </div>
                     ))}
                   </div>
