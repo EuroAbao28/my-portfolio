@@ -5,7 +5,7 @@ function Separator({ noTop }: { noTop?: boolean }) {
   return (
     <div
       className={classNames(
-        "grid grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr] bg-transparent border-b border-gray-300 h-10",
+        "grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr] bg-transparent border-b border-gray-300 h-10",
         {
           "border-t": !noTop,
         }
