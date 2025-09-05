@@ -52,7 +52,7 @@ function ProjectsSection() {
                         {item.title}
                       </p>
 
-                      <p className="text-sm text-gray-500">
+                      <p className="text-xs lg:text-sm text-gray-500">
                         {item.date_published}
                       </p>
                     </div>
@@ -80,9 +80,9 @@ function ProjectsSection() {
                         setSelectedProject(item);
                         setIsProjectModalOpen(true);
                       }}
-                      className="flex items-center gap-4 bg-gray-950 text-white px-4 py-2 text-sm hover:gap-6 transition-all duration-500 cursor-pointer uppercase">
+                      className="flex items-center gap-4 bg-gray-950 text-white px-4 py-2 text-xs md:text-sm hover:gap-6 transition-all duration-500 cursor-pointer uppercase">
                       View Details
-                      <BsArrowRight className="-mt-1" />
+                      <BsArrowRight className="-mt-0.5" />
                     </button>
                   </div>
                 </div>
