@@ -87,7 +87,7 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                     )}
                   </div>
 
-                  <p className="mt-4 sm:mt-6 border-y border-gray-300 text-sm sm:text-base">
+                  <p className="mt-4 sm:mt-6 border-y border-gray-300 text-sm sm:text-base text-gray-700">
                     {project?.desc}
                   </p>
 
@@ -104,7 +104,9 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                           />
                         )}
 
-                        <p className="text-xs sm:text-sm">{item.name}</p>
+                        <p className="text-xs sm:text-sm text-gray-700">
+                          {item.name}
+                        </p>
                       </div>
                     ))}
                   </div>
