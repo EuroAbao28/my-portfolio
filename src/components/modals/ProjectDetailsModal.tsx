@@ -87,15 +87,15 @@ function ProjectDetailsModal({ project, isOpen, onClose }: ProjectDetailsProp) {
                     )}
                   </div>
 
-                  <p className="mt-6 border-y border-gray-300 text-sm sm:text-base">
+                  <p className="mt-4 sm:mt-6 border-y border-gray-300 text-sm sm:text-base">
                     {project?.desc}
                   </p>
 
-                  <div className="mt-6 border-t border-gray-300 flex flex-wrap gap-2 p-2">
+                  <div className="mt-4 sm:mt-6 border-t border-gray-300 flex flex-wrap gap-2 p-2">
                     {project?.tech_stack.map((item, index) => (
                       <div
                         key={index}
-                        className="border border-gray-300 p-2 bg-gray-50 flex items-center gap-2">
+                        className="border border-gray-300 p-1 sm:p-2 bg-gray-50 flex items-center gap-2">
                         {project && (
                           <Image
                             src={item.image}

@@ -5,7 +5,7 @@ export const PROJECTS: Project[] = [
   {
     image: images.web_mockup,
     title: "WatchMe",
-    desc: "I created an anime streaming platform powered by the Consumet API, offering seamless anime playback through React Player. The platform includes a real-time global chat system using Socket.IO, allowing users to engage while streaming. To enhance usability, I implemented search, filtering, and pagination features within a responsive UI built with Tailwind CSS.",
+    desc: "Developed an anime streaming platform with seamless playback via React Player, integrated real-time global chat using Socket.IO, and implemented search, filtering, and pagination within a fully responsive Tailwind CSS UI.",
     tech_stack: [
       { name: "MongoDB", image: images.mongodb_icon },
       { name: "Express", image: images.express_icon },
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     image: images.web_mockup,
     title: "Meshenger",
-    desc: "I built a real-time chat application using the MERN stack, enabling instant messaging between users with Socket.IO. To ensure security, I implemented authentication with JWT and bcrypt. The application features a modern, responsive user interface designed with Tailwind CSS, providing a smooth and accessible messaging experience across devices.",
+    desc: "Built a real-time chat application with the MERN stack, featuring instant messaging via Socket.IO, secure authentication with JWT and bcrypt, and a responsive Tailwind CSS interface for seamless cross-device usability.",
     tech_stack: [
       { name: "MongoDB", image: images.mongodb_icon },
       { name: "Express", image: images.express_icon },
