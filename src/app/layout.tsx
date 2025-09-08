@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Mono, Monoton } from "next/font/google";
 import "./globals.css";
 
 const plexMono = IBM_Plex_Mono({
   variable: "--font-plex-mono",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+
+const monoton = Monoton({
+  variable: "--font-monoton",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plexMono.variable} antialiased`}>{children}</body>
+      <body className={`${plexMono.variable} ${monoton.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
