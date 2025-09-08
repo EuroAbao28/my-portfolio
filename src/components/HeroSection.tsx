@@ -69,18 +69,12 @@ function HeroSection() {
               <div></div>
 
               <div className="border-y border-gray-300"></div>
-              <div className="overflow-hidden border border-gray-300 relative">
-                <div className="absolute w-2 h-2 bg-white rounded-full top-3 left-3 z-10"></div>
-                <div className="absolute w-2 h-2 bg-white rounded-full top-3 right-3 z-10"></div>
-
+              <div className="overflow-hidden border border-gray-300">
                 <Image
                   src={images.avatar}
                   alt="avatar"
                   className="-translate-y-6"
                 />
-
-                <div className="absolute w-2 h-2 bg-white rounded-full bottom-3 left-3 z-10"></div>
-                <div className="absolute w-2 h-2 bg-white rounded-full bottom-3 right-3 z-10"></div>
               </div>
               <div className="border-y border-gray-300"></div>
 

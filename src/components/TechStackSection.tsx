@@ -9,17 +9,7 @@ function TechStackSection() {
       <div className="border-x border-gray-300"></div>
 
       <div className="bg-white grid">
-        <h1
-          className="text-[12rem] font-bold row-start-1 col-start-1 -mt-18 ml-1 text-transparent bg-clip-text"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(45deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02) 9px, rgba(83,83,83,0.25) 9px, rgba(83,83,83,0.25) 10px)",
-            backgroundPosition: "center center",
-          }}>
-          01
-        </h1>
-
-        <div className="py-16 col-start-1 row-start-1">
+        <div className="pb-16 col-start-1 row-start-1">
           <h3 className="font-bold text-2xl border-y border-r-gray-300 bg-white">
             Tech Stack:
           </h3>

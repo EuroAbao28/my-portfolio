@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import SideNavMenu from "./modals/SideNavMenu";
-
-const LINKS = ["home", "projects", "contact"];
+import { LINKS } from "@/constants/generics";
 
 function NavigationBar() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);

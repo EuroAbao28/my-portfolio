@@ -7,7 +7,7 @@ import NavigationBar from "@/components/NavigationBar";
 import ProjectsSection from "@/components/ProjectsSection";
 import Separator from "@/components/Separator";
 import TechStackSection from "@/components/TechStackSection";
-import { useState } from "react";
+import ExperienceSection from "@/components/ExperienceSection";
 
 export default function Home() {
   return (
@@ -29,6 +29,9 @@ export default function Home() {
 
       {/* separator */}
       <Separator />
+
+      {/* about */}
+      <ExperienceSection />
 
       {/* tech stack */}
       <TechStackSection />
