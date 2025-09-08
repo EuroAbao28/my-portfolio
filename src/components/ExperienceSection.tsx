@@ -29,7 +29,7 @@ function ExperienceSection() {
             {EXPERIENCE.map((item, index) => (
               <div key={index} className="flex-1 border border-gray-300">
                 <div className="flex gap-4 border-b border-gray-300">
-                  <div className="border-r border-gray-300 grid grid-cols-[14px_auto_14px] grid-rows-[1fr_auto_1fr]">
+                  <div className="border-r border-gray-300 grid grid-cols-[10px_auto_10px] grid-rows-[1fr_auto_1fr]">
                     <div></div>
                     <div className="border-x border-gray-300"></div>
                     <div></div>
