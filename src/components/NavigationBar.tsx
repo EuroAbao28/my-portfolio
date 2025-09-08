@@ -18,7 +18,7 @@ function NavigationBar() {
           <h1 className="text-2xl font-bold ml-2">EA</h1>
 
           {/* large view */}
-          <ul className="max-[600px]:hidden flex">
+          <ul className="max-[900px]:hidden flex">
             {LINKS.map((item, index) => (
               <li
                 key={index}
@@ -33,7 +33,7 @@ function NavigationBar() {
           {/* burger menu */}
           <div
             onClick={() => setIsSideMenuOpen(true)}
-            className="hidden max-[600px]:block p-4 text-xl hover:bg-gray-50">
+            className="hidden max-[900px]:block p-4 text-xl hover:bg-gray-50">
             <LuMenu />
           </div>
 

@@ -33,6 +33,9 @@ export default function Home() {
       {/* about */}
       <ExperienceSection />
 
+      {/* separator */}
+      <Separator />
+
       {/* tech stack */}
       <TechStackSection />
 

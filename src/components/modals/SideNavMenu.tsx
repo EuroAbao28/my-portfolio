@@ -17,7 +17,7 @@ function SideNavMenu({ navItems, isOpen, onClose }: SideNavMenuProps) {
     <Dialog
       open={isOpen}
       onClose={onClose}
-      className="relative z-50 min-[600px]:hidden">
+      className="relative z-50 min-[900px]:hidden">
       {/* Backdrop */}
       <TransitionChild
         enter="ease-out duration-300"

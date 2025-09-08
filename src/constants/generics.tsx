@@ -1,7 +1,13 @@
 import { LuBriefcaseBusiness } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
 
-export const LINKS = ["home", "experience", "projects", "contact"];
+export const LINKS = [
+  "home",
+  "experience",
+  "technologies",
+  "projects",
+  "contact",
+];
 
 export const EXPERIENCE = [
   {

@@ -25,7 +25,7 @@ function ProjectsSection() {
                 "repeating-linear-gradient(45deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02) 9px, rgba(83,83,83,0.25) 9px, rgba(83,83,83,0.25) 10px)",
               backgroundPosition: "center center",
             }}>
-            02
+            03
           </h1>
 
           <div className="py-16 col-start-1 row-start-1">

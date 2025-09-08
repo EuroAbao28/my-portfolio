@@ -4,12 +4,24 @@ import React from "react";
 
 function TechStackSection() {
   return (
-    <section className="grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr]">
+    <section
+      id="technologies"
+      className="grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr]">
       <div className="bg-white"></div>
       <div className="border-x border-gray-300"></div>
 
       <div className="bg-white grid">
-        <div className="pb-16 col-start-1 row-start-1">
+        <h1
+          className="text-[12rem] font-bold row-start-1 col-start-1 -mt-18 ml-1 text-transparent bg-clip-text"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(45deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02) 9px, rgba(83,83,83,0.25) 9px, rgba(83,83,83,0.25) 10px)",
+            backgroundPosition: "center center",
+          }}>
+          02
+        </h1>
+
+        <div className="py-16 col-start-1 row-start-1">
           <h3 className="font-bold text-2xl border-y border-r-gray-300 bg-white">
             Tech Stack:
           </h3>
