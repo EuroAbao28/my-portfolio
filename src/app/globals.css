@@ -12,10 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  scroll-margin-top: 137px; /* pushes section down when linked via #id */
-}
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

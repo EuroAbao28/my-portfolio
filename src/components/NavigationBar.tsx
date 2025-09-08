@@ -14,7 +14,7 @@ function NavigationBar() {
       <div className="border-x border-gray-300"></div>
 
       <div className="bg-white">
-        <div className="flex justify-between items-center min-[600px]:mt-10 min-[600px]:border-t border-gray-300">
+        <div className="flex justify-between items-center min-[900px]:mt-10 min-[900px]:border-t border-gray-300">
           <h1 className="text-2xl font-bold ml-2">EA</h1>
 
           {/* large view */}
