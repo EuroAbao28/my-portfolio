@@ -45,7 +45,7 @@ function SideNavMenu({ navItems, isOpen, onClose }: SideNavMenuProps) {
                   "repeating-linear-gradient(45deg, transparent, transparent 9px, rgba(83, 83, 83, 0.2) 9px, rgba(83, 83, 83, 0.2) 10px)",
                 backgroundPosition: "center center",
               }}
-              className="bg-white fixed right-0 top-0 max-h-60 w-1/2 shadow-lg grid grid-cols-[20px_1fr_20px] grid-rows-[20px_1fr_20px]">
+              className="bg-white fixed right-0 top-0 max-h-96 w-1/2 shadow-lg grid grid-cols-[20px_1fr_20px] grid-rows-[20px_1fr_20px]">
               <div></div>
               <div className="border-x border-gray-300"></div>
               <div></div>
