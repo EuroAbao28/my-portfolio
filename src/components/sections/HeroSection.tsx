@@ -3,15 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import ParentContainer from "../generics/ParentContainer";
 
 function HeroSection() {
   return (
-    <section
-      id="home"
-      className="grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr] scroll-mt-[92px] min-[900px]:scroll-mt-[137px]">
-      <div className="bg-white"></div>
-      <div className="border-x border-gray-300"></div>
-
+    <ParentContainer id="home">
       <div className="bg-white sm:py-16 ">
         <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-8 lg:gap-12 sm:border-y border-gray-300">
           <div className="flex-1 md:border-r border-gray-300 flex flex-col justify-center">
@@ -39,26 +35,32 @@ function HeroSection() {
 
             <div className="mt-6 border-t min-[1003px]:border-b border-gray-300 flex gap-4">
               <Link
-                href="/"
+                href="https://www.linkedin.com/in/euroabao-dev/"
+                target="_blank"
                 className="text-3xl border-x border-gray-300 text-blue-700">
                 <FaLinkedin />
               </Link>
+
               <Link
-                href="/"
+                href="https://github.com/EuroAbao28"
+                target="_blank"
                 className="text-3xl border-x border-gray-300 text-gray-900">
                 <FaGithub />
               </Link>
 
               <Link
-                href="/"
+                href="https://www.facebook.com/euro.abao/"
+                target="_blank"
                 className="text-3xl border-x border-gray-300 text-blue-600">
                 <FaFacebook />
               </Link>
-              <Link
-                href="/"
+
+              <a
+                href="/resume.pdf"
+                download
                 className="text-3xl border-x border-gray-300 text-amber-500">
                 <FaFileAlt />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -85,10 +87,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-
-      <div className="border-x border-gray-300"></div>
-      <div className="bg-white"></div>
-    </section>
+    </ParentContainer>
   );
 }
 

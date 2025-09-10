@@ -1,15 +1,11 @@
 import React from "react";
 import { LuMail, LuPhone } from "react-icons/lu";
-import NumberStamp from "./NumberStamp";
+import NumberStamp from "../generics/NumberStamp";
+import ParentContainer from "../generics/ParentContainer";
 
 function ContactSection() {
   return (
-    <section
-      id="contact"
-      className="grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr] scroll-mt-[92px] min-[900px]:scroll-mt-[137px]">
-      <div className="bg-white"></div>
-      <div className="border-x border-gray-300"></div>
-
+    <ParentContainer id="contact">
       <div className="bg-white grid">
         <NumberStamp number="04" />
 
@@ -66,7 +62,7 @@ function ContactSection() {
                   <input
                     type="text"
                     placeholder="Email"
-                    className="p-2 border-t border-x border-b border-gray-300"
+                    className="p-2 border-t border-x border-b border-gray-300 rounded-none"
                   />
                 </div>
 
@@ -111,10 +107,7 @@ function ContactSection() {
           </div>
         </div>
       </div>
-
-      <div className="border-x border-gray-300"></div>
-      <div className="bg-white"></div>
-    </section>
+    </ParentContainer>
   );
 }
 

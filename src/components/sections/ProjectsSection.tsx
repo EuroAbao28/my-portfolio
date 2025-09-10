@@ -2,9 +2,10 @@ import { PROJECTS } from "@/constants/projects";
 import Image from "next/image";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import ProjectDetailsModal from "./modals/ProjectDetailsModal";
+import ProjectDetailsModal from "../modals/ProjectDetailsModal";
 import { Project } from "@/types";
-import NumberStamp from "./NumberStamp";
+import NumberStamp from "../generics/NumberStamp";
+import ParentContainer from "../generics/ParentContainer";
 
 function ProjectsSection() {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
@@ -12,12 +13,7 @@ function ProjectsSection() {
 
   return (
     <>
-      <section
-        id="projects"
-        className="grid grid-cols-[1fr_14px_minmax(0,1100px)_14px_1fr] sm:grid-cols-[1fr_24px_minmax(0,1100px)_24px_1fr] md:grid-cols-[1fr_40px_minmax(0,1100px)_40px_1fr] scroll-mt-[92px] min-[900px]:scroll-mt-[137px]">
-        <div className="bg-white"></div>
-        <div className="border-x border-gray-300"></div>
-
+      <ParentContainer id="projects">
         <div className="bg-white grid">
           <NumberStamp number="03" />
 
@@ -83,10 +79,7 @@ function ProjectsSection() {
             </div>
           </div>
         </div>
-
-        <div className="border-x border-gray-300"></div>
-        <div className="bg-white"></div>
-      </section>
+      </ParentContainer>
 
       <ProjectDetailsModal
         project={selectedProject}

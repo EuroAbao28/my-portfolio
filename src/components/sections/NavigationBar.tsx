@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { LuMenu } from "react-icons/lu";
-import SideNavMenu from "./modals/SideNavMenu";
 import { LINKS } from "@/constants/generics";
+import SideNavMenu from "../modals/SideNavMenu";
 
 function NavigationBar() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -16,9 +16,7 @@ function NavigationBar() {
       <div className="bg-white">
         <div className="flex justify-between items-center min-[900px]:mt-10 min-[900px]:border-t border-gray-300">
           <div className="flex">
-            <h1 className="text-2xl ml-2 font-monoton -scale-x-100 ">E</h1>
-
-            <h1 className="text-2xl font-monoton">A</h1>
+            <h1 className="text-2xl ml-2 font-bold">EA</h1>
           </div>
 
           {/* large view */}
