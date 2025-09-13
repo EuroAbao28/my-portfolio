@@ -59,9 +59,7 @@ export async function POST(request) {
           <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; border-left: 4px solid #4f46e5;">
             ${message.replace(/\n/g, "<br>")}
           </div>
-          <p style="color: #666; font-size: 12px; margin-top: 20px;">
-            Sent on: ${new Date().toLocaleString()}
-          </p>
+         
         </div>
       `,
     });

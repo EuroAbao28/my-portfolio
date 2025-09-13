@@ -153,6 +153,9 @@ function ContactSection() {
                     placeholder="Name"
                     value={formData.name}
                     onChange={handleChange}
+                    required
+                    minLength={4}
+                    maxLength={25}
                     className="p-2 min-[640px]:border-b border-x border-t border-gray-300"
                   />
                   <div className="max-[640]:h-[14px] max-[640]:border-t max-[640]:border-x min-[640px]:border-y border-gray-300"></div>
@@ -162,6 +165,9 @@ function ContactSection() {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
+                    minLength={4}
+                    maxLength={50}
                     className="p-2 border-t border-x border-b border-gray-300 rounded-none"
                   />
                 </div>
@@ -176,6 +182,9 @@ function ContactSection() {
                   placeholder="Write a message..."
                   value={formData.message}
                   onChange={handleChange}
+                  required
+                  minLength={10}
+                  maxLength={500}
                   className="flex-1 border border-gray-300 min-h-32 w-full p-2"></textarea>
                 <div className="max-sm:h-[14px] h-6 border-x border-b border-gray-300 grid grid-cols-[1fr_24px_1fr]">
                   <div></div>
